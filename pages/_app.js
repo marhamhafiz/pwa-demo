@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
   //     };
   //   });
   // })
-  <Script>
+  <Script id="post-message-demo">
     {`
       window.addEventListener("message", function (event) {
         // We are receiveing messages from any origin, you can check of the origin by
