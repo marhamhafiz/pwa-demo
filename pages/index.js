@@ -12,9 +12,33 @@ export default function Home() {
       // get the port then use it for communication.
       var port = event.ports[0];
       if (typeof port === 'undefined') return;
+
+      const landingMessage = {
+        "event":"view_item",
+        "value":{
+          "event_category":"ecommerce",
+          "ecommerce":{
+            "items":[{
+              "item_id":1447,
+              "item_name":"Pkn-nila",
+              "affiliation":"TestMitraOps",
+              "index":0,
+              "item_brand":"Whiskas",
+              "item_category":"Pakan",
+              "item_list_id":"recommendation_product",
+              "item_list_name":"PakanTerlaris",
+              "item_variant":"1Sak 1Kg",
+              "price":102000,
+              "quantity":1
+            }],
+            "currency":"IDR",
+            "value":102000
+          }
+        }
+      }
     
       // Post message on this port.
-      port.postMessage("Test")
+      port.postMessage(JSON.stringify(landingMessage))
     
       // Receive upcoming messages on this port.
       port.onmessage = function(event) {
@@ -22,7 +46,7 @@ export default function Home() {
       };
     });
   },[])
-  
+
   return (
     <div className={styles.container}>
       <Head>
