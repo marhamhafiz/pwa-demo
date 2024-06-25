@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 import Script from 'next/script';
 
 function MyApp({ Component, pageProps }) {
