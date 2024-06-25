@@ -1,6 +1,12 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
+/**
+ * @type {import('next').NextConfig}
+ */
 
-module.exports = nextConfig
+const withPWA = require('next-pwa')
+
+module.exports = withPWA({
+  dest: 'public',
+  swSrc: 'service-worker.js',
+  register: false,
+  skipWaiting: false,
+})
