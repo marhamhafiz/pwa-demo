@@ -57,6 +57,11 @@ export default function Home() {
             }],
             "currency":"IDR",
             "value":102000,
+            "custom01": "ZYJjX74UTP PnvVhApTyL gBWua3vp0b uYtD5ZTBRn Q7j621Y6Bh ZEkGWDawQw FmjCm5Ky6G BhPxSmnW6M 5Bu0yBhSWN",
+            "custom02": "ZYJjX74UTP PnvVhApTyL gBWua3vp0b uYtD5ZTBRn Q7j621Y6Bh ZEkGWDawQw FmjCm5Ky6G BhPxSmnW6M 5Bu0yBhSWN",
+            "custom03": "ZYJjX74UTP PnvVhApTyL gBWua3vp0b uYtD5ZTBRn Q7j621Y6Bh ZEkGWDawQw FmjCm5Ky6G BhPxSmnW6M 5Bu0yBhSWN",
+            "custom04": "ZYJjX74UTP PnvVhApTyL gBWua3vp0b uYtD5ZTBRn Q7j621Y6Bh ZEkGWDawQw FmjCm5Ky6G BhPxSmnW6M 5Bu0yBhSWN",
+            "custom05": "ZYJjX74UTP PnvVhApTyL gBWua3vp0b uYtD5ZTBRn Q7j621Y6Bh ZEkGWDawQw FmjCm5Ky6G BhPxSmnW6M 5Bu0yBhSWN"
           }
         }
       }
