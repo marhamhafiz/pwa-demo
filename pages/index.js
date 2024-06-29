@@ -2,9 +2,19 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { useEffect } from 'react'
+import { firebaseAnalytics } from '../components/firebase'
+import { logEvent } from '@firebase/analytics'
 
 export default function Home() {
+
   useEffect(() => {
+    // firebase analytics
+    firebaseAnalytics && logEvent(firebaseAnalytics, 'page_view', {
+      page_title: "landing_page",
+      page_path: "/",
+    });
+    
+    // post message
     window.addEventListener("message", function (event) {
       // We are receiveing messages from any origin, you can check of the origin by
       // using event.origin
