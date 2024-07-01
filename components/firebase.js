@@ -39,4 +39,4 @@ const firebaseApp = initializeApp(firebaseConfig);
 
 const firebaseAnalytics = await isSupported() ? getAnalytics(firebaseApp) : null
 
-export { firebaseAnalytics }
+export { firebaseApp, firebaseAnalytics }

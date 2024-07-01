@@ -1,6 +1,7 @@
 import '../styles/globals.css'
 // import { useEffect } from 'react';
 import Script from 'next/script';
+import FcmTokenComp from '../components/firebaseForeground';
 
 function MyApp({ Component, pageProps }) {
 
@@ -43,7 +44,12 @@ function MyApp({ Component, pageProps }) {
     `}
   </Script>
 
-  return <Component {...pageProps} />
+  return (
+    <div>
+      <FcmTokenComp /> {/* Render for foreground notification handling */}
+      <Component {...pageProps} />
+    </div>
+  ) 
 }
 
 export default MyApp
